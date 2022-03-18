@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lets Play</string>
+    <string name="shop">Бронь</string>
+    <string name="explore">Поиск</string>
+    <string name="cart">Корзина</string>
+    <string name="favorite">Избранное</string>
+    <string name="account">Профиль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
