@@ -2,6 +2,8 @@ package com.irzstudio.GroceryStore.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import com.irzstudio.GroceryStore.R
 import com.irzstudio.GroceryStore.ui.account.AccountFragment
 import com.irzstudio.GroceryStore.ui.cart.CartFragment

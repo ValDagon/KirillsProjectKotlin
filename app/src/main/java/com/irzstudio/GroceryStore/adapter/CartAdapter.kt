@@ -4,20 +4,25 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.irzstudio.GroceryStore.R
 import com.irzstudio.GroceryStore.listener.OnClickItemAddRemove
 import com.irzstudio.GroceryStore.listener.OnTotalChange
+import com.irzstudio.GroceryStore.listener.myOnClick
 import com.irzstudio.GroceryStore.model.product.ProductEntity
+import kotlinx.android.synthetic.main.fragment_cart.view.*
 import kotlinx.android.synthetic.main.item_cart.view.*
+import java.lang.Exception
 import java.text.DecimalFormat
 
 class CartAdapter(val listener : OnTotalChange): RecyclerView.Adapter<CartAdapter.CartViewHolder>() {
 
     private var list: MutableList<ProductEntity> = mutableListOf()
     var onClickListener: OnClickItemAddRemove? =null
+    var myOnClickListener: myOnClick? =null
 
     inner class CartViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         @SuppressLint("SetTextI18n")
@@ -42,7 +47,6 @@ class CartAdapter(val listener : OnTotalChange): RecyclerView.Adapter<CartAdapte
             itemView.btn_plus_cart.setOnClickListener {
                 onClickListener?.onClickAdd(productEntity)
             }
-
 
             Glide.with(itemView)
                 .load(productEntity.picture)

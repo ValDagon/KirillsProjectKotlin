@@ -2,13 +2,16 @@ package com.irzstudio.GroceryStore.ui.cart
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
+
 import androidx.fragment.app.Fragment
 import com.irzstudio.GroceryStore.R
 import com.irzstudio.GroceryStore.adapter.CartAdapter
 import com.irzstudio.GroceryStore.listener.OnClickItemAddRemove
 import com.irzstudio.GroceryStore.listener.OnTotalChange
+import com.irzstudio.GroceryStore.listener.myOnClick
 import com.irzstudio.GroceryStore.model.product.ProductEntity
 import com.irzstudio.GroceryStore.ui.detailproduct.DetailProductActivity
 import com.irzstudio.GroceryStore.utill.Constant
@@ -21,6 +24,7 @@ import java.text.DecimalFormat
 class CartFragment : Fragment(R.layout.fragment_cart) {
 
     private val viewModel: CartViewModel by viewModel()
+
 
     private val cartAdapter: CartAdapter by lazy {
         CartAdapter(object : OnTotalChange{
@@ -50,7 +54,6 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
     }
 
     private fun setListCart() {
-
         rv_cart.setHasFixedSize(true)
         rv_cart.adapter = cartAdapter
         cartAdapter.onClickListener = object : OnClickItemAddRemove {
@@ -71,8 +74,7 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
             override fun onClickRemove(productEntity: ProductEntity) {
                 removeFromCart(productEntity)
             }
-        }
-
+            }
     }
 
     private fun addQtyProduct(productEntity: ProductEntity) {
@@ -90,6 +92,4 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
         Toast.makeText(activity, "Продукт удалён", Toast.LENGTH_SHORT).show()
         viewModel.loadDataCart()
     }
-
-
 }
