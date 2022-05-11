@@ -31,12 +31,6 @@
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/_16sdp">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_person"
-            android:layout_gravity="center"/>
-
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +41,8 @@
                 android:layout_height="wrap_content"
                 android:hint="Имя пользователя"
                 android:textSize="@dimen/_16sdp"
-                android:maxLines="1" />
+                android:maxLines="1"
+                android:background="@color/white"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,12 +53,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/_16sdp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_round_email"
-            android:layout_gravity="center"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -71,12 +60,14 @@
             app:boxBackgroundColor="@color/backgroud">
 
             <EditText
+                android:id="@+id/et_email_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
                 android:textSize="@dimen/_16sdp"
                 android:maxLines="1"
-                android:inputType="textEmailAddress"/>
+                android:inputType="textEmailAddress"
+                android:background="@color/white"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -87,12 +78,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/_16sdp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_round_lock_24"
-            android:layout_gravity="center"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -101,11 +86,13 @@
             app:boxBackgroundColor="@color/backgroud">
 
             <EditText
+                android:id="@+id/et_pass_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Пароль"
                 android:textSize="@dimen/_16sdp"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:background="@color/white"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 

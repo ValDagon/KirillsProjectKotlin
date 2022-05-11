@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.View
+import android.webkit.ConsoleMessage
 import android.widget.Toast
 
 import androidx.fragment.app.Fragment
@@ -13,11 +14,16 @@ import com.irzstudio.GroceryStore.listener.OnClickItemAddRemove
 import com.irzstudio.GroceryStore.listener.OnTotalChange
 import com.irzstudio.GroceryStore.listener.myOnClick
 import com.irzstudio.GroceryStore.model.product.ProductEntity
+import com.irzstudio.GroceryStore.ui.activity.MainActivity
+import com.irzstudio.GroceryStore.ui.activity.RegistrasiActivity
 import com.irzstudio.GroceryStore.ui.detailproduct.DetailProductActivity
+import com.irzstudio.GroceryStore.ui.shop.OrderSuccess
 import com.irzstudio.GroceryStore.utill.Constant
 import com.irzstudio.GroceryStore.utill.ProductSavedType
+import kotlinx.android.synthetic.main.activity_login_avtivity.*
 import kotlinx.android.synthetic.main.fragment_cart.*
 import org.koin.android.viewmodel.ext.android.viewModel
+import java.io.Console
 import java.text.DecimalFormat
 
 
@@ -43,6 +49,7 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
 
         observeCart()
         setListCart()
+        OrderSucces()
         viewModel.loadDataCart()
 
     }
@@ -91,5 +98,10 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
         viewModel.removeProduct(productEntity, ProductSavedType.CART)
         Toast.makeText(activity, "Продукт удалён", Toast.LENGTH_SHORT).show()
         viewModel.loadDataCart()
+    }
+    private fun OrderSucces() {
+        btn_order.setOnClickListener {
+            startActivity(Intent(context, OrderSuccess()::class.java))
+        }
     }
 }

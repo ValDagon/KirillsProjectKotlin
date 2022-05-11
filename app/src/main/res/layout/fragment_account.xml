@@ -218,7 +218,7 @@
                 android:layout_marginTop="@dimen/_16sdp" />
 
             <Button
-                android:id="@+id/btn_favorite"
+                android:id="@+id/btn_out_logged"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_48sdp"
                 android:layout_margin="@dimen/_16sdp"

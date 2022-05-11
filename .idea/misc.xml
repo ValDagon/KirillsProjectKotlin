@@ -72,12 +72,12 @@
         <entry key="..\:/Programming/KirillKotlinProject/Grocery-Store-Toko-Sembako-master/app/src/main/res/menu/menu_bottom_nav.xml" value="0.2078125" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/activity_detail_product.xml" value="0.36666666666666664" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/activity_get_started.xml" value="0.36666666666666664" />
-        <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/activity_login_avtivity.xml" value="0.18802083333333333" />
+        <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/activity_login_avtivity.xml" value="0.2" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/activity_product.xml" value="0.18802083333333333" />
-        <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/activity_registrasi.xml" value="0.18802083333333333" />
+        <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/activity_registrasi.xml" value="0.22" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/activity_splash.xml" value="0.18802083333333333" />
-        <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/fragment_account.xml" value="0.18802083333333333" />
+        <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/fragment_account.xml" value="0.67" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/fragment_cart.xml" value="0.22" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/fragment_explore.xml" value="0.17831813576494426" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/fragment_favorite.xml" value="0.17831813576494426" />
@@ -89,6 +89,7 @@
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/item_favorite.xml" value="0.17831813576494426" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/item_groceries.xml" value="0.17831813576494426" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/item_product.xml" value="0.17831813576494426" />
+        <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/layout/order_succes.xml" value="0.33" />
         <entry key="..\:/Programming/KirillsProjectKotlin/app/src/main/res/menu/menu_bottom_nav.xml" value="0.18802083333333333" />
       </map>
     </option>
