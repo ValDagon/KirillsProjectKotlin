@@ -21,12 +21,12 @@
         android:layout_height="@dimen/_52sdp"
         android:layout_marginHorizontal="@dimen/_8sdp"
         android:layout_marginBottom="@dimen/_8sdp"
-        app:elevation="@dimen/_2sdp"
-        android:elevation="@dimen/_16sdp"
         android:background="@drawable/bg_bottom_nav_bar"
+        android:elevation="@dimen/_16sdp"
+        app:elevation="@dimen/_2sdp"
         app:itemIconTint="@drawable/bottom_nav_selector"
         app:itemTextColor="@drawable/bottom_nav_selector"
         app:labelVisibilityMode="labeled"
-        app:menu="@menu/menu_bottom_nav"/>
+        app:menu="@menu/menu_bottom_nav" />
 
 </LinearLayout>

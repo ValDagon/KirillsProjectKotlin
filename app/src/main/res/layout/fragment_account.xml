@@ -9,8 +9,10 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="@dimen/_12ssp">
 
+        // ИМЯ
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -18,80 +20,122 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_100sdp"
-                android:paddingHorizontal="@dimen/_24sdp">
+                android:layout_height="70dp">
 
                 <TextView
                     android:id="@+id/rv_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_width="157dp"
+                    android:layout_height="45dp"
                     android:drawablePadding="@dimen/_8sdp"
-                    android:text="Людженский Кирилл "
+                    android:text="Профиль"
                     android:textColor="#FFFFFF"
-                    android:textSize="@dimen/_14ssp"
+                    android:textSize="@dimen/_24ssp"
                     android:textStyle="bold"
-                    app:drawableEndCompat="@drawable/ic_edit_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/cardView"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.42000002" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="16dp"
-                    android:text="myemail@gmail.com"
-                    android:textColor="@color/secondary_text"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/cardView"
-                    app:layout_constraintTop_toBottomOf="@+id/rv_name"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView"
-                    android:layout_width="@dimen/_46sdp"
-                    android:layout_height="@dimen/_46sdp"
-                    app:cardCornerRadius="@dimen/_46sdp"
-                    android:background="@drawable/bg_card_view"
-                    app:background="@null"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.017"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <ImageView
-                        android:id="@+id/iv_profile"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/foto_profile"
-                        android:layout_gravity="center|bottom"/>
-
-                </androidx.cardview.widget.CardView>
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.035" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1px" />
-
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ваше имя"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/secondary_text" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:drawablePadding="@dimen/_16sdp"
-                android:text="Заказы"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/_14ssp"
-                app:drawableEndCompat="@drawable/ic_arrow_forward"
-                app:drawableStartCompat="@drawable/ic_orders" />
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_16sdp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@color/backgroud">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="Введите имя"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            // ФАМИЛИЯ
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ваше фамилия"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/secondary_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_16sdp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@color/backgroud">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="Введите фамилию"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            // НОМЕР ТЕЛЕФОНА
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Номер телефона"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/secondary_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_16sdp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@color/backgroud">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="Введите ваш номер"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -99,16 +143,11 @@
                 android:layout_marginTop="@dimen/_16sdp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:drawablePadding="@dimen/_16sdp"
-                android:text="Обо мне"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/_14ssp"
-                app:drawableEndCompat="@drawable/ic_arrow_forward"
-                app:drawableStartCompat="@drawable/ic_detail" />
+                android:text="Обратная связь: lphelp@letsplay.com"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/secondary_text" />
 
             <View
                 android:layout_width="match_parent"
@@ -116,106 +155,15 @@
                 android:layout_marginTop="@dimen/_16sdp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:drawablePadding="@dimen/_16sdp"
-                android:text="Мой клуб"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/_14ssp"
-                app:drawableEndCompat="@drawable/ic_arrow_forward"
-                app:drawableStartCompat="@drawable/ic_delicery_address" />
-
+                android:text="Версия приложения: 1.0.0"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/secondary_text" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginTop="@dimen/_16sdp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:drawablePadding="@dimen/_16sdp"
-                android:text="Методы оплаты"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/_14ssp"
-                app:drawableEndCompat="@drawable/ic_arrow_forward"
-                app:drawableStartCompat="@drawable/ic_payment" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginTop="@dimen/_16sdp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:drawablePadding="@dimen/_14sdp"
-                android:text="Купоны"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/_14ssp"
-                app:drawableEndCompat="@drawable/ic_arrow_forward"
-                app:drawableStartCompat="@drawable/ic_promo" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginTop="@dimen/_16sdp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:drawablePadding="@dimen/_16sdp"
-                android:text="Уведомления"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/_14ssp"
-                app:drawableEndCompat="@drawable/ic_arrow_forward"
-                app:drawableStartCompat="@drawable/ic_bell" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginTop="@dimen/_16sdp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:drawablePadding="@dimen/_16sdp"
-                android:text="Помощь"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/_14ssp"
-                app:drawableEndCompat="@drawable/ic_arrow_forward"
-                app:drawableStartCompat="@drawable/ic_help" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginTop="@dimen/_16sdp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:drawablePadding="@dimen/_16sdp"
-                android:text="О приложении"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/_14ssp"
-                app:drawableEndCompat="@drawable/ic_arrow_forward"
-                app:drawableStartCompat="@drawable/ic_about" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginTop="@dimen/_16sdp" />
+                android:layout_marginTop="@dimen/_10sdp" />
 
             <Button
                 android:id="@+id/btn_out_logged"
@@ -231,7 +179,6 @@
                 android:textAllCaps="false"
                 android:textColor="#000000"
                 app:backgroundTint="@null" />
-
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
